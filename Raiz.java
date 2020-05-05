@@ -1,28 +1,28 @@
 /*********************************************************************/
-/**   ACH2001 - IntroduÁ„o ‡ ProgramaÁ„o                            **/
+/**   Introdu√ß√£o √† Programa√ß√£o                                      **/
 /**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   2020104 - Norton Trevisan Roman                               **/
+/**   Professor- Norton Trevisan Roman                              **/
 /**                                                                 **/
-/**   Segundo ExercÌcio-Programa                                    **/
+/**   Segundo Exerc√≠cio-Programa                                    **/
 /**                                                                 **/
-/**   Karina Duran Munhos                   11295911                **/
+/**   Karina Duran Munhos                                           **/
 /**                                                                 **/
 /**   05/05/2020                                                    **/
 /*********************************************************************/
 
-// C·lculo para raiz quadrada
+// C√°lculo para raiz quadrada
 public class Raiz {
 	/*
-	 * Calcula a raiz quadrada de um valor, com uma determinada precis„o. Retorna
+	 * Calcula a raiz quadrada de um valor, com uma determinada precis√£o. Retorna
 	 * esse valor, ou -1 quando: a < 0 epsilon <= 0 epsilon >= 1
 	 * 
-	 * Par‚metro: a - valor cuja raiz quadrada ser· calculada epsilon - precis„o do
-	 * c·lculo quanto menor epsilon, maior a precis„o
+	 * Par√¢metro: a - valor cuja raiz quadrada ser√° calculada epsilon - precis√£o do
+	 * c√°lculo quanto menor epsilon, maior a precis√£o
 	 * 
-	 * Utiliza o mÈtodo de Newton para c·lculo de raÌz quadrada
+	 * Utiliza o m√©todo de Newton para c√°lculo de ra√≠z quadrada
 	 */
 
-	// vari·veis auxiliares
+	// vari√°veis auxiliares
 
 	// equivalente a xi
 	static double x1;
@@ -30,7 +30,7 @@ public class Raiz {
 	// equivalente a xi+1
 	static double x2;
 
-	// MÈtodo para calcular o mÛdulo de um valor.
+	// M√©todo para calcular o m√≥dulo de um valor.
 	static double valorAbsoluto(double valor) {
 		if (valor < 0) {
 			valor = valor * (-1);
@@ -40,16 +40,16 @@ public class Raiz {
 
 	}
 
-	// MÈtodo para calcular a raÌz
+	// M√©todo para calcular a ra√≠z
 	static double raizQuadrada(double a, double epsilon) {
 		if (a < 0 || epsilon < 0 || epsilon > 1) {
 			return -1;
 		}
 		/*
-		 * Atribui-se ao primeiro valor a/2, e ent„o aplica a fÛrmula e se inicia o
-		 * loop. Quando a diferenÁa de x2, ˙ltimo valor resultante do laÁo, e x1, valor
-		 * anterior a passar pelo laÁo, for menor que epsilon obteve-se a precis„o
-		 * desejada. Retornar, ent„o, o valor.
+		 * Atribui-se ao primeiro valor a/2, e ent√£o aplica a f√≥rmula e se inicia o
+		 * loop. Quando a diferen√ßa de x2, √∫ltimo valor resultante do la√ßo, e x1, valor
+		 * anterior a passar pelo la√ßo, for menor que epsilon obteve-se a precis√£o
+		 * desejada. Retornar, ent√£o, o valor.
 		 */
 		else {
 			x2 = a / 2;
@@ -64,7 +64,7 @@ public class Raiz {
 	}
 
 	
-	 //Apenas para seus testes. ISSO SER¡ IGNORADO NA CORRE«√O
+	 //Apenas para seus testes. ISSO SER√Å IGNORADO NA CORRE√á√ÉO
 
 	public static void main(String[] args) {
 		// inserir valores de a e epsilon
