@@ -1,14 +1,4 @@
-/*********************************************************************/
-/**   Introdução à Programação                                      **/
-/**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   Professor- Norton Trevisan Roman                              **/
-/**                                                                 **/
-/**   Segundo Exercício-Programa                                    **/
-/**                                                                 **/
-/**   Karina Duran Munhos                                           **/
-/**                                                                 **/
-/**   05/05/2020                                                    **/
-/*********************************************************************/
+
 
 // Cálculo para raiz quadrada
 public class Raiz {
@@ -64,7 +54,7 @@ public class Raiz {
 	}
 
 	
-	 //Apenas para seus testes. ISSO SERÁ IGNORADO NA CORREÇÃO
+	//testes
 
 	public static void main(String[] args) {
 		// inserir valores de a e epsilon
