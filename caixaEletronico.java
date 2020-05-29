@@ -1,41 +1,30 @@
-/*********************************************************************/
-/**   ACH2001 - Introdução à Programação                            **/
-/**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   2020104 - Norton Trevisan Roman                               **/
-/**                                                                 **/
-/**   Primeiro Exercício-Programa                                   **/
-/**                                                                 **/
-/**   Karina Duran Munhos                   11295911                **/
-/**                                                                 **/
-/**   14/04/2020                                                    **/
-/*********************************************************************/
 
 /*
-	Caixa eletrônico das Ilhas Weblands, com estoque ilimitado de cédulas
+	Caixa eletrÃ´nico das Ilhas Weblands, com estoque ilimitado de cÃ©dulas
 	de B$50,00, B$10,00, B$5,00 e B$1,00.
 */
 public class caixaEletronico {
    
-    // Número de cédulas de B$50,00
+    // NÃºmero de cÃ©dulas de B$50,00
 	static int n50;
 	
-	// Número de cédulas de B$10,00
+	// NÃºmero de cÃ©dulas de B$10,00
 	static int n10;
 	
-	// Número de cédulas de B$5,00
+	// NÃºmero de cÃ©dulas de B$5,00
 	static int n5;
 	
-	// Número de cédulas de B$1,00
+	// NÃºmero de cÃ©dulas de B$1,00
 	static int n1;
 
 	/*
-		Determinar a quantidade de notas necessárias para atingir o objetivo 
-		utilizando o mínimo de cédulas possível.
+		Determinar a quantidade de notas necessÃ¡rias para atingir o objetivo 
+		utilizando o mÃ­nimo de cÃ©dulas possÃ­vel.
 		
-		Abastecer as variáveis globais n50,n10, n5 e n1 com seu respectivo
-		número de cédulas.
+		Abastecer as variÃ¡veis globais n50,n10, n5 e n1 com seu respectivo
+		nÃºmero de cÃ©dulas.
 		
-		Parâmetro:
+		ParÃ¢metro:
 			valor - O valor total a ser retirado
 	*/
 	
