@@ -1,32 +1,21 @@
-/*********************************************************************/
-/**   ACH2001 - IntroduÁ„o ‡ ProgramaÁ„o                            **/
-/**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   <turma> - Norton Trevisan Roman                               **/
-/**                                                                 **/
-/**   Terceiro ExercÌcio-Programa                                   **/
-/**                                                                 **/
-/**   Karina Duran Munhos                        11295911           **/
-/**                                                                 **/
-/**   29/05/2020                                                    **/
-/*********************************************************************/
 
 /*
  * Jogo da Velha - programa para verificar o status de um jogo.
  * 
- * Lista de Status calculado: 0 - Jogo n„o iniciado: o tabuleiro est· 'vazio',
- * isto È sem peÁas X e O;
- * 1 - Jogo encerrado1: o primeiro jogador (que usa as peÁas X) È o ganhador;
- * 2 - Jogo encerrado2: o segundo jogador (que usa as peÁas O) È o ganhador; 
- * 3 - Jogo encerrado3: empate - todas as casas do tabuleiro est„o preenchidas 
+ * Lista de Status calculado: 0 - Jogo n√£o iniciado: o tabuleiro est√° 'vazio',
+ * isto √© sem pe√ßas X e O;
+ * 1 - Jogo encerrado1: o primeiro jogador (que usa as pe√ßas X) √© o ganhador;
+ * 2 - Jogo encerrado2: o segundo jogador (que usa as pe√ßas O) √© o ganhador; 
+ * 3 - Jogo encerrado3: empate - todas as casas do tabuleiro est√£o preenchidas 
  * com X e O, mas nenhum dos jogadores ganhou; 
- * 4 -Jogo j· iniciado e em andamento: nenhuma das alternativas anteriores.
+ * 4 -Jogo j√° iniciado e em andamento: nenhuma das alternativas anteriores.
  */
 
 public class JogoDaVelha {
-	// vari·veis auxiliares
+	// vari√°veis auxiliares
 	/*
 	 * resolucionado -indicar se o jogo tem vencedores jogoIniciado - indicar se o
-	 * jogo j· foi iniciado
+	 * jogo j√° foi iniciado
 	 */
 	static final char pecaX = 'X';
 	static final char pecaY = 'O';
@@ -42,7 +31,7 @@ public class JogoDaVelha {
 	 * Entrada: tabuleiro - matriz 3x3 de caracteres representando uma partida
 	 * valida de Jogo da Velha
 	 * 
-	 * SaÌda: um inteiro contendo o status da partida (valores v·lidos de zero a
+	 * Sa√≠da: um inteiro contendo o status da partida (valores v√°lidos de zero a
 	 * quatro)
 	 */
 
@@ -51,15 +40,15 @@ public class JogoDaVelha {
 		resolucionado = false;
 		jogoIniciado = false;
 		// Percorre a matriz e verifica se o jogo iniciou
-		for (int m = 1; m < tabuleiro.length; m++) {
-			for (int n = 1; n < tabuleiro.length; n++) {
+		for (int m = 0; m < tabuleiro.length; m++) {
+			for (int n = 0; n < tabuleiro.length; n++) {
 				if (tabuleiro[m][n] != matrizNula[m][n]) {
 					jogoIniciado = true;
 
 				}
 			}
 		}
-		// Percorre a matriz everifica se h· ganhador nas fileiras
+		// Percorre a matriz everifica se h√° ganhador nas fileiras
 		if (jogoIniciado == true) {
 			for (int i = 0; i < tabuleiro.length; i++) {
 				if ((tabuleiro[i][0] == tabuleiro[i][1]) && (tabuleiro[i][1] == tabuleiro[i][2])
@@ -75,7 +64,7 @@ public class JogoDaVelha {
 
 				}
 			}
-			// Percorre a matriz e verifica se h· ganhador nas colunas
+			// Percorre a matriz e verifica se h√° ganhador nas colunas
 			for (int j = 0; j < tabuleiro.length; j++) {
 				if (tabuleiro[0][j] == tabuleiro[1][j] && tabuleiro[1][j] == tabuleiro[2][j]
 						&& tabuleiro[1][j] != espacoVazio) {
@@ -90,7 +79,7 @@ public class JogoDaVelha {
 
 				}
 			}
-			// Verifica se h· ganhador na diagonal
+			// Verifica se h√° ganhador na diagonal
 			if ((tabuleiro[0][0] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][2])
 					|| (tabuleiro[0][2] == tabuleiro[1][1] && tabuleiro[1][1] == tabuleiro[2][0])
 							&& tabuleiro[1][1] != espacoVazio) {
@@ -107,9 +96,9 @@ public class JogoDaVelha {
 			}
 			/*
 			 * Percorre a matriz procurando um elemento espacoVazio que indique que o jogo
-			 * ainda n„o foi finalizado se o jogo ainda n„o estiver solucionado. Se a
-			 * resposta for que n„o existe a vari·vel espacoVazio, ent„o deu empate pois n„o
-			 * h· vencedores nem movimentos a se fazer.
+			 * ainda n√£o foi finalizado se o jogo ainda n√£o estiver solucionado. Se a
+			 * resposta for que n√£o existe a vari√°vel espacoVazio, ent√£o deu empate pois n√£o
+			 * h√° vencedores nem movimentos a se fazer.
 			 */
 			if (resolucionado == false) {
 				for (int k = 0; k < 3; k++) {
@@ -128,7 +117,7 @@ public class JogoDaVelha {
 
 			status =0;
 		}
-			// Caso o jogo n„o foi iniciado, recebe o status 0.
+			// Caso o jogo n√£o foi iniciado, recebe o status 0.
 
 		return status;
 	}
