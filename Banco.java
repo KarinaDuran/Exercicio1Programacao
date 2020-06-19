@@ -1,14 +1,4 @@
-/*********************************************************************/
-/**   ACH2001 - Introdução à Programação                            **/
-/**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   2020104 - Norton Trevisan Roman                               **/
-/**                                                                 **/
-/**   Quarto Exercício-Programa                                     **/
-/**                                                                 **/
-/**   Karina Duran Munhos                  11295911                 **/
-/**                                                                 **/
-/**    26/06/2020                                                   **/
-/*********************************************************************/
+
 
 public class Banco {
 	private Gerente[] gerentes;
